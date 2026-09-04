@@ -1,0 +1,22 @@
+:root {
+  --bg: #F5F4F0;
+  --panel: #FFFFFF;
+  --ink: #1B1C19;
+  --ink-soft: #6B6B62;
+  --line: #E1DED2;
+  --accent: #2F5D50;
+  --accent-soft: #E1EAE4;
+  --amber: #B4790A;
+  --amber-soft: #F5E7C8;
+  --red: #A03D2C;
+  --red-soft: #F2DCD3;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+}

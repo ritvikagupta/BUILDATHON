@@ -1,0 +1,43 @@
+{
+  "name": "Alex Sharma",
+  "email": "alex@example.com",
+  "phone": "+91XXXXXXXXXX",
+
+  "education": {
+    "degree": "B.Tech",
+    "field": "Computer Science",
+    "institution": "Example University",
+    "graduation_year": 2028
+  },
+
+  "skills": [
+    "Python",
+    "JavaScript",
+    "React",
+    "Machine Learning"
+  ],
+
+  "experience": [
+    {
+      "role": "Student Developer",
+      "description": "Built web applications and AI projects for university clubs and hackathons."
+    }
+  ],
+
+  "bio": "Computer Science student interested in AI, software development and technology. Enjoys building end-to-end products under time pressure.",
+
+  "interests": [
+    "Artificial Intelligence",
+    "Web Development",
+    "Hackathons"
+  ],
+
+  "preferences": {
+    "work_mode": "Hybrid",
+    "interested_in": [
+      "AI",
+      "Software Development",
+      "Hackathons"
+    ]
+  }
+}
