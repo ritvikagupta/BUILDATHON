@@ -1,13 +1,13 @@
 {
-  "name": "Alex Sharma",
-  "email": "alex@example.com",
+  "name": "Ritvika Gupta",
+  "email": "ritvikagupta@gmail.com",
   "phone": "+91XXXXXXXXXX",
 
   "education": {
     "degree": "B.Tech",
     "field": "Computer Science",
-    "institution": "Example University",
-    "graduation_year": 2028
+    "institution": "BMS University",
+    "graduation_year": 2029
   },
 
   "skills": [
