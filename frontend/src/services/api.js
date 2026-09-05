@@ -1,15 +1,26 @@
 /**
- * Thin wrapper around FormZero's backend API. Keeping every fetch call in
- * one file means Person 3 (backend/integration) can change the API base URL
- * or auth handling without touching component code.
+ * Thin wrapper around FormZero's backend API.
  */
+
 const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8000'
 
-export async function fetchAnswer({ question, type = 'text', options = [] }) {
+export async function fetchAnswer({
+  question,
+  type = 'text',
+  options = [],
+  userProfile = null,
+}) {
   const response = await fetch(`${API_BASE}/answer`, {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ question, type, options }),
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      question,
+      type,
+      options,
+      user_profile: userProfile,
+    }),
   })
 
   if (!response.ok) {
@@ -22,6 +33,10 @@ export async function fetchAnswer({ question, type = 'text', options = [] }) {
 
 export async function checkHealth() {
   const response = await fetch(`${API_BASE}/health`)
-  if (!response.ok) throw new Error('Backend health check failed')
+
+  if (!response.ok) {
+    throw new Error('Backend health check failed')
+  }
+
   return response.json()
 }
